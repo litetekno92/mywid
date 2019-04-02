@@ -7,7 +7,7 @@ class MyWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MyWidget> {
-  
+
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +27,14 @@ class _MyWidgetState extends State<MyWidget> {
       },
     );
 
-    return new Scaffold(
+    return new MaterialApp(
+      home: new Scaffold(
       appBar: new AppBar(
         title: new Text("Widget Page"),
       ),
+      
       body: futureBuilder,
+      )
     );
   }
 
