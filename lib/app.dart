@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/mywidget.dart';
+// import 'widgets/mywidget.dart';
+import 'widgets/texty.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green,
       ),
       // home: MyWidget(title: "Drawer Layout with Tabs"),
-      home: MyWidget(),
+      home: Texty(),
     );
   }
 }
