@@ -1,7 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
+class MyWidget extends StatefulWidget {
+  @override
+  _MyWidgetState createState() => new _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+
+
   @override
   Widget build(BuildContext context) {
     var futureBuilder = new FutureBuilder(
@@ -19,11 +26,17 @@ class MyWidget extends StatelessWidget {
         }
       },
     );
-    return new Container(child: futureBuilder);
+
+    return new MaterialApp(
+      home: new Scaffold(
+      appBar: new AppBar(
+        title: new Text("Widget Page"),
+      ),
+      
+      body: futureBuilder,
+      )
+    );
   }
-
-
-
 
   Future<List<String>> _getData() async {
     var values = new List<String>();

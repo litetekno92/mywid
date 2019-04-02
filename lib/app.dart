@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'widgets/mywidget.dart';
-import 'widgets/texty.dart';
+// import 'widgets/texty.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -15,5 +15,14 @@ class MyApp extends StatelessWidget {
       // home: MyWidget(title: "Drawer Layout with Tabs"),
       home: Texty(),
     );
+  }
+
+  
+}
+
+class Texty extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(child: new Text('This works'));
   }
 }
